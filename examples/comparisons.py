@@ -6,3 +6,11 @@ else:
     result = False
 
 print(result)
+
+
+age = None
+
+if not str(age).isdigit():
+    print(0)
+else:
+    print(age)
