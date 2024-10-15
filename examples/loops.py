@@ -21,3 +21,9 @@ for nr in range(10, 21, 3):
     if nr == 13:
         continue
     print(nr)
+
+nr_sum = 0
+for i in range(100,151):
+    nr_sum += i
+
+print(f"sum is : {nr_sum}")
