@@ -44,3 +44,15 @@ varargs(*l)
 
 person = {'name': 'Jane', 'age': 62}
 varargs(**person)  # varargs(name="Jane", age=62)
+
+
+# String formatting examples (str.format is a function with arbitrary positional
+# and keyword arguments)
+name = "Adam"
+age = 45
+print(f"{name} is {age} years old")
+print("{0} is {1} years old".format(name, age))
+print("{0} is {1} years old. {0} is a mechanic.".format(name, age))
+print("{0} is {1} years old. {0} is a mechanic.".format("Andrei", 25))
+print("{name} is {age} years old. {name} is a mechanic."
+      .format(name="Andrei", age=25))
