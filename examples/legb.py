@@ -40,11 +40,12 @@ class MyClass:
     pass
 
 
-# sum = 0  # shadowing is not recommended
+if __name__ == "__main__":
+    # sum = 0  # shadowing is not recommended
 
-my_func(1)
-# print(a, b, inner)  # cannot access local names outside function
+    my_func(1)
+    # print(a, b, inner)  # cannot access local names outside function
 
-print("=== global ===")
-print("Global names:", X, my_func, MyClass)
-print("Built-in names:", len, int, None, NameError)
+    print("=== global ===")
+    print("Global names:", X, my_func, MyClass)
+    print("Built-in names:", len, int, None, NameError)
